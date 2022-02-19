@@ -119,7 +119,8 @@ CAMEO_MATS = dict(
   cameo_12x12=('1', 12, 12),
   cameo_12x24=('2', 24, 12),
   cameo_plus_15x15=('8', 15, 15),
-  cameo_pro_24x24=('9', 24, 24)
+  cameo_pro_24x24=('9', 24, 24),
+  cameo_stamp_6x7_5=('3', 6, 7.5),
 )
 
 #  robocut/Plotter.h:53 ff

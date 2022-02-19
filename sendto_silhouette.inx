@@ -14,6 +14,7 @@
         <item value="cameo_12x24">Cameo 12x24</item>
         <item value="cameo_plus_15x15">Cameo Plus 15x15</item>
         <item value="cameo_pro_24x24">Cameo Pro 24x24</item>
+        <item value="cameo_stamp_6x7_5">Stamp Material 6x7,5</item>
         <item value="no_mat">None</item>
       </param>
       <param name="toolholder" type="enum" _gui-text="Tool Holder:">
