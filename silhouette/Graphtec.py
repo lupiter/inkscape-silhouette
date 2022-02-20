@@ -120,7 +120,7 @@ CAMEO_MATS = dict(
   cameo_12x24=('2', 24, 12),
   cameo_plus_15x15=('8', 15, 15),
   cameo_pro_24x24=('9', 24, 24),
-  cameo_stamp_6x7_5=('3', 6, 7.5),
+  cameo_stamp_6x7_5=('3', 5.94, 7.488, 30, 54),
 )
 
 #  robocut/Plotter.h:53 ff
@@ -836,6 +836,9 @@ Alternatively, you can add yourself to group 'lp' and logout/login.""" % (self.h
     #TB50,x: x = 1 landscape mode, x = 0 portrait mode
     self.send_command(["FN0", "TB50,0"])
 
+    if len(matparms) > 3:
+      self.set_boundary(
+        matparms[3], matparms[4], _inch_2_SU(matparms[1]), _inch_2_SU(matparms[2]))
     if matparms[1]:
       # Note this does _not_ reproduce the \left,bot and Zright,top
       # commands emitted by Silhouette Studio (see ../Commands.md), although

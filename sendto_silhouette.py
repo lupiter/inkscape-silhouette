@@ -367,7 +367,7 @@ class SendtoSilhouette(inkex.Effect):
                 dest = "media", default = "132",
                 choices=("100", "101", "102", "106", "111", "112", "113",
                 "120", "121", "122", "123", "124", "125", "126", "127", "128", "129", "130",
-                "131", "132", "133", "134", "135", "136", "137", "138", "300"),
+                "131", "132", "133", "134", "135", "136", "137", "138", "139", "300"),
                 help="113 = pen, 132 = printer paper, 300 = custom")
         self.arg_parser.add_argument("-o", "--overcut",
                 dest = "overcut", type = float, default = 0.5,

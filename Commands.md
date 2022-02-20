@@ -493,3 +493,15 @@ L0 \0,0 M0,0 J0 FN0 TB50,0
 with Cameo Plus 15x15 mat, all was the same except the 7th line was replaced with:
 
 TG8 FN0 TB50,0 FM1 \30,9 Z7590,7320
+
+Cameo 4 with Stamp Material Mat
+--------------------------------
+Captured on MacOS using Wireshark 2022-02-19. Sent commands to cut a circle on cardstock, using auto-blade with depth 1.
+
+
+TG3 FN0 TB50,0 \30,54 Z3018,3804 J1
+FX20,1 TJ3 !4,1 FC18,1,1 FE0,1
+FF1,1,1 FF1,1,1 FX20,1 TJ3
+FC18,1,1 TF1,1
+M200,703 BE1   BZ1,200,724,200,999,424,1224,700,1224,0 BZ1,700,1224,976,1224,1200,999,1200,724,0 BZ1,1200,724,1200,448,976,224,700,224,0 BZ1,700,224,424,224,200,448,200,724,0 BE1
+L0 \0,0 M0,0 J0 FN0 TB50,0
